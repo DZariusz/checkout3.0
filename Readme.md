@@ -61,7 +61,8 @@ $Checkout->addToalDiscount(600, 10);
 
 // finalize order - it will print you receipt with total sum before and after dicount
 // this call removes all added products from memory, but discounts stay
-$Checkout->finalizeCheckout();
+// also it will return data that you can save in a market
+$dataToSave = $Checkout->finalizeCheckout();
 
 ```
 
